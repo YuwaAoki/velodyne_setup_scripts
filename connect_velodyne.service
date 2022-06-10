@@ -8,7 +8,7 @@ Type=simple
 User=root
 Group=root
 Restart=on-failure
-ExecStart=/usr/bin/connect_velodyne.sh
+ExecStart=/usr/bin/env/connect_velodyne.sh
 
 [Install]
 WantedBy=multi-user.target
