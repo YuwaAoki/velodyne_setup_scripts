@@ -1,14 +1,13 @@
 [Unit]
 Description=connect velodyne shell script service
-Documentation=
-#After=networking.service
+After=networking.service
 
 [Service]
 Type=simple
 User=root
 Group=root
 Restart=on-failure
-ExecStart=/usr/bin/env/connect_velodyne.sh
+ExecStart=/home/ubuntu/velodyne_setup_scripts/connect_velodyne.sh
 
 [Install]
 WantedBy=multi-user.target
